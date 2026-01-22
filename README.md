@@ -20,7 +20,11 @@ To simulate a realistic corporate LAN isolated from my home Wi-Fi, I created a c
 
 <img width="944" height="189" alt="v4ilkq5asL" src="https://github.com/user-attachments/assets/d755a8cb-031a-4678-ad0e-2412cdc96786" />
 
+
+
 <img width="959" height="585" alt="cdW1vsMS8G" src="https://github.com/user-attachments/assets/7b2a4f61-a879-48f8-8a05-915ad613e001" />
+
+
 
 
 
