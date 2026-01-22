@@ -36,14 +36,11 @@ Standard Windows logs are often insufficient for detecting advanced threats. To 
 Instead of the default settings, I applied the SwiftOnSecurity configuration to focus on critical anomalies. 
 
 ### Deployment Log
-I installed Sysmon as a service using PowerShell with administrative privileges, enabling hash algorithms to track file integrity.
+I installed Sysmon as a service using PowerShell with admin privileges, enabling hash algorithms to track file integrity.
 
-```powershell
-# 1. Navigate to the tools directory
-cd C:\Sysmon
 
-# 2. Install with the custom XML config and enable md5/sha256 hashing
-.\Sysmon64.exe -i sysmonconfig.xml -accepteula -h md5,sha256,imphash ```
+<img width="851" height="366" alt="j4QGpCHm2z" src="https://github.com/user-attachments/assets/4ba78549-63b5-48b4-b827-b07c303f0955" />
+
 
 
 🧠 Phase 3: SIEM Ingestion (Splunk Enterprise)
