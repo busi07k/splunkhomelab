@@ -65,7 +65,6 @@ The standard GUI method ("Add Data") failed to detect the Microsoft-Windows-Sysm
 
         I manually appended the stanza to force the ingestion of Sysmon logs:
 
-Ini, TOML
 
 [WinEventLog://Microsoft-Windows-Sysmon/Operational]
 disabled = 0
@@ -82,8 +81,6 @@ index = main
 To validate the pipeline, I executed a basic SPL query.
 
 SPL Query:
-Fragmento de código
-
 index=main sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational.
 
 
