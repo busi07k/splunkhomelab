@@ -10,7 +10,7 @@ Before configuring the network, the following environments were deployed on Virt
 **Hypervisor:** [Oracle VirtualBox 7.0](https://www.virtualbox.org/wiki/Downloads)
 
 
-## 🌐 Phase 1: Network Architecture
+## 🌐 Phase 1: Network
 To simulate a realistic corporate LAN isolated from my home Wi-Fi, I created a custom **NAT Network**. This ensures the Attacker and Victim can communicate directly while remaining protected behind a virtual gateway.
 ### ⚙️ Configuration Steps
 1.  Open VirtualBox **Network Manager** (`File` > `Tools` > `Network Manager`).
