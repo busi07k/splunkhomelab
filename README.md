@@ -25,6 +25,28 @@ To simulate a realistic corporate LAN isolated from my home Wi-Fi, I created a c
 <img width="959" height="585" alt="cdW1vsMS8G" src="https://github.com/user-attachments/assets/7b2a4f61-a879-48f8-8a05-915ad613e001" />
 
 
+## 👁️ Phase 2: Endpoint Visibility (Sysmon)
+Standard Windows logs are often insufficient for detecting advanced threats. To bridge this gap, I deployed **Sysmon** with a community-hardened configuration.
+
+### 🛠️ Tools Used
+* **Agent:** [Sysmon (Official Microsoft Download)](https://learn.microsoft.com/en-us/sysinternals/downloads/sysmon)
+* **Configuration:** [SwiftOnSecurity XML Config](https://github.com/SwiftOnSecurity/sysmon-config) (Filters noise and maps MITRE ATT&CK events)
+
+### Configuration Strategy
+Instead of the default settings, I applied the SwiftOnSecurity configuration to focus on critical anomalies. 
+
+### Deployment Log
+I installed Sysmon as a service using PowerShell with administrative privileges, enabling hash algorithms to track file integrity.
+
+```powershell
+# 1. Navigate to the tools directory
+cd C:\Sysmon
+
+# 2. Install with the custom XML config and enable md5/sha256 hashing
+.\Sysmon64.exe -i sysmonconfig.xml -accepteula -h md5,sha256,imphash
+
+
+
 
 
 
