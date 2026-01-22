@@ -43,7 +43,7 @@ I installed Sysmon as a service using PowerShell with administrative privileges,
 cd C:\Sysmon
 
 # 2. Install with the custom XML config and enable md5/sha256 hashing
-.\Sysmon64.exe -i sysmonconfig.xml -accepteula -h md5,sha256,imphash
+.\Sysmon64.exe -i sysmonconfig.xml -accepteula -h md5,sha256,imphash ```
 
 
 🧠 Phase 3: SIEM Ingestion (Splunk Enterprise)
