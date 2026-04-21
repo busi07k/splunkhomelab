@@ -1,7 +1,7 @@
 # Splunk HomeLab
 
 This repository documents the deployment of a **Cybersecurity Home Lab** designed to simulate attacks and practice threat detection. Built on **VirtualBox** (Kali Linux & Windows 10), it leverages **Sysmon** for advanced telemetry and **Splunk Enterprise** for centralized log analysis
-
+ 
  Phase 0: Lab Prerequisites
 Before configuring the network, the following environments were deployed on VirtualBox.
 
