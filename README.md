@@ -2,7 +2,7 @@
 
 This repository documents the deployment of a **Cybersecurity Home Lab** designed to simulate attacks and practice threat detection. Built on **VirtualBox** (Kali Linux & Windows 10), it leverages **Sysmon** for advanced telemetry and **Splunk Enterprise** for centralized log analysis
 
-🛠️ Phase 0: Lab Prerequisites
+ Phase 0: Lab Prerequisites
 Before configuring the network, the following environments were deployed on VirtualBox.
 
 **Attacker:** [Kali Linux 2024.x (VirtualBox Image)](https://www.kali.org/get-kali/#kali-virtual-machines)
@@ -12,7 +12,7 @@ Before configuring the network, the following environments were deployed on Virt
 
 ##  Phase 1: Network
 To simulate a realistic corporate LAN isolated from my home Wi-Fi, I created a custom **NAT Network**. This ensures the Attacker and Victim can communicate directly while remaining protected behind a virtual gateway.
-### ⚙️ Configuration Steps
+###  Configuration Steps
 1.  Open VirtualBox **Network Manager** (`File` > `Tools` > `Network Manager`).
 2.  Create a new NAT Network named `HackingLab`.
 3.  **CIDR:** Set to `10.0.2.0/24` to define the subnet.
