@@ -84,7 +84,7 @@ SPL Query:
 index=main sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational.
 
 
-## Optional Attack Simulation & Detection )
+## Optional Attack Simulation & Detection 
 
 To validate the environment, I simulated a Brute Force Attack (T1110) using Hydra from the Kali machine against the Windows 10 target.
 
