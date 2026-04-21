@@ -76,7 +76,7 @@ index = main
 
     Restart: Restarted the Splunk service to load the new configuration.
 
-✅ Verification (PoC)
+ ##  Verification (PoC)
 
 To validate the pipeline, I executed a basic SPL query.
 
