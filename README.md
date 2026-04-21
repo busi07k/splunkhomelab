@@ -65,15 +65,10 @@ Implementation Steps:
 [WinEventLog://Microsoft-Windows-Sysmon/Operational]
 
 disabled = 0
-
 renderXml = 1
-
 checkpointInterval = 5
-
 current_only = 0
-
 start_from = oldest
-
 index = main   (copy and paste) 
 
 
