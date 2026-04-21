@@ -83,8 +83,15 @@ To validate the pipeline, I executed a basic SPL query.
 SPL Query:
 index=main sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational.
 
-if you have pentesting knowledge you can simulate an attack using hydra from the attack machine and detect it with the following query 
 
-``` index=main EventCode=4625 | stats count by TargetUserName, IpAddress | where count > 10 ```
+## Optional Attack Simulation & Detection )
 
+To validate the environment, I simulated a Brute Force Attack (T1110) using Hydra from the Kali machine against the Windows 10 target.
 
+Detection Logic (SPL):
+
+index=main EventCode=4625 
+| stats count by TargetUserName, IpAddress 
+| where count > 10
+
+Note: This query identifies multiple failed login attempts originating from a single IP, a clear indicator of automated credential testing.
