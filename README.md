@@ -82,7 +82,7 @@ index = main
 To validate the pipeline, I executed a basic SPL query.
 
 SPL Query:
-index=main sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational.
+index=main sourcetype="XmlWinEventLog:Microsoft-Windows-Sysmon/Operational"
 
 
 ## Optional Attack Simulation & Detection 
