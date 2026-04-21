@@ -62,7 +62,7 @@ Implementation Steps:
 
     Config File Editing: I opened the configuration file C:\Program Files\Splunk\etc\system\local\inputs.conf using Notepad (as Administrator) and manually appended the stanza to force the ingestion of Sysmon logs:
 
-((( [WinEventLog://Microsoft-Windows-Sysmon/Operational]
+[WinEventLog://Microsoft-Windows-Sysmon/Operational]
 
 disabled = 0
 
@@ -74,7 +74,7 @@ current_only = 0
 
 start_from = oldest
 
-index = main ))) (copy and paste) 
+index = main   (copy and paste) 
 
 
 ( Restart: Restarted the Splunk service to load the new configuration. ) 
