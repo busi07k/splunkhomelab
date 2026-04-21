@@ -74,10 +74,10 @@ current_only = 0
 
 start_from = oldest
 
-index = main
+index = main ))) (copy and paste) 
 
 
-Restart: Restarted the Splunk service to load the new configuration.
+( Restart: Restarted the Splunk service to load the new configuration. ) 
 
 ## Verification (PoC)
 
